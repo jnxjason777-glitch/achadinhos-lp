@@ -73,7 +73,7 @@ function startCountdown(duration) {
 }
 
 // 4. CTA Redirection (with UTM & Parameter Persistence)
-const CHECKOUT_URL = 'https://pagamento.ofertas-demarco.online/pay/049ed4ef-8bf1-477b-9a1e-8da79835d920';
+const CHECKOUT_URL = '[SUA_URL_DE_CHECKOUT]'; // Substitua pelo seu link atualizado
 
 function initCTA() {
     const buyBtn = document.querySelector('#buyBtn');
