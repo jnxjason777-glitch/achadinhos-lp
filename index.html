@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Scooter Elétrica TUI 1000W | 2 Lugares | Oferta Imperdível</title>
+    <meta name="description" content="Aproveite a Scooter Elétrica TUI 1000W com 90% de desconto. Sem CNH, Completa e com Frete Grátis.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sticky Header -->
+        <header class="header-top">
+            <i data-lucide="x" class="header-icon"></i>
+            <div class="icon-group">
+                <i data-lucide="share-2" class="header-icon"></i>
+                <i data-lucide="shopping-cart" class="header-icon"></i>
+                <i data-lucide="more-horizontal" class="header-icon"></i>
+            </div>
+        </header>
+
+        <!-- Product Image / Carousel -->
+        <section class="hero-image-container">
+            <div class="carousel" id="mainCarousel">
+                <img src="https://achadinhosdavitrine.com.br/assets/cor-preta-BWAWoHKe.png" alt="Preta" class="carousel-img">
+                <img src="https://achadinhosdavitrine.com.br/assets/cor-vermelha-D6grsbZ3.png" alt="Vermelha" class="carousel-img">
+                <img src="https://achadinhosdavitrine.com.br/assets/cor-branca-D7swOaRy.png" alt="Branca" class="carousel-img">
+                <img src="https://achadinhosdavitrine.com.br/assets/cor-azul-TMrally0.png" alt="Azul" class="carousel-img">
+            </div>
+            <div class="carousel-pagination">
+                <span class="pill active"></span>
+                <span class="pill"></span>
+                <span class="pill"></span>
+                <span class="pill"></span>
+            </div>
+        </section>
+
+        <!-- Flash Sale Banner (BELOW PHOTO) -->
+        <section class="flash-sale-banner">
+            <div class="flash-left">
+                <div class="price-row" style="display: flex; align-items: center;">
+                    <span class="discount-box">87% OFF</span>
+                    <span class="current-price">R$ 99,70</span>
+                </div>
+                <span class="old-price-banner">R$ 794,90</span>
+            </div>
+            <div class="flash-right">
+                <div class="offer-title">
+                    <i data-lucide="zap" class="zap-icon"></i>
+                    <span>Oferta Relâmpago</span>
+                </div>
+                <div class="countdown-row">
+                    <span>Termina em </span>
+                    <span id="timer" class="timer-bold">01:28:13</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Main Details -->
+        <section class="product-info">
+            <div class="title-row" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <h1 class="product-title">Scooter Elétrica TUI 1000W | 2 Lugares | Sem CNH | Autonomia 60km</h1>
+                <i data-lucide="bookmark" class="save-icon" style="margin-top: 4px; color: #333;"></i>
+            </div>
+            
+            <div class="stats-row">
+                <span class="rating">
+                    <i data-lucide="star" class="star-icon" style="fill: #FFB300; width: 14px;"></i>
+                    <span class="score">4.8</span>
+                    <span class="count-blue">(2,8 mil)</span>
+                </span>
+                <span class="divider">|</span>
+                <span class="sold-count">5,0K vendidos on-line</span>
+                <i data-lucide="info" class="info-icon" style="width: 14px;"></i>
+            </div>
+
+            <div class="shipping-info-block">
+                <div class="ship-top">
+                    <i data-lucide="truck" class="truck-icon" style="width: 20px;"></i>
+                    <span class="free-ship-tag">Frete grátis</span>
+                    <span class="delivery-date">Receba até 6–10 de abr</span>
+                    <i data-lucide="chevron-right" class="chevron-gray"></i>
+                </div>
+                <div class="ship-bottom">
+                    Taxa de envio: <span class="strikethrough">R$ 14,60</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Variations Section -->
+        <section class="variations-section">
+            <div class="variation-item active" onclick="syncCarousel(0)">
+                <span class="best-seller-tag">MAIS VENDIDA</span>
+                <div class="var-img-container">
+                    <img src="https://achadinhosdavitrine.com.br/assets/cor-preta-BWAWoHKe.png" alt="Preta">
+                    <div class="check-icon"><i data-lucide="check"></i></div>
+                </div>
+                <span class="var-label">Preta</span>
+            </div>
+            <div class="variation-item" onclick="syncCarousel(1)">
+                <span class="popular-tag">POPULAR</span>
+                <div class="var-img-container">
+                    <img src="https://achadinhosdavitrine.com.br/assets/cor-vermelha-D6grsbZ3.png" alt="Vermelha">
+                    <div class="check-icon"><i data-lucide="check"></i></div>
+                </div>
+                <span class="var-label">Vermelha</span>
+            </div>
+            <div class="variation-item" onclick="syncCarousel(2)">
+                <div class="var-img-container">
+                    <img src="https://achadinhosdavitrine.com.br/assets/cor-branca-D7swOaRy.png" alt="Branca">
+                    <div class="check-icon"><i data-lucide="check"></i></div>
+                </div>
+                <span class="var-label">Branca</span>
+            </div>
+            <div class="variation-item" onclick="syncCarousel(3)">
+                <div class="var-img-container">
+                    <img src="https://achadinhosdavitrine.com.br/assets/cor-azul-TMrally0.png" alt="Azul">
+                    <div class="check-icon"><i data-lucide="check"></i></div>
+                </div>
+                <span class="var-label">Azul</span>
+            </div>
+        </section>
+
+        <!-- Protection Section (NEW) -->
+        <section class="customer-protection-v2">
+            <div class="protect-header">
+                <div class="p-title-box">
+                    <i data-lucide="shield-check"></i>
+                    <span>Proteção do cliente</span>
+                </div>
+                <i data-lucide="chevron-right" class="chevron-gray"></i>
+            </div>
+            <div class="protect-grid">
+                <div class="p-item"><i data-lucide="check"></i> Devolução gratuita</div>
+                <div class="p-item"><i data-lucide="check"></i> Reembolso automático</div>
+                <div class="p-item"><i data-lucide="check"></i> Pagamento seguro</div>
+                <div class="p-item"><i data-lucide="check"></i> Reembolso total</div>
+            </div>
+        </section>
+
+        <!-- Offers Section (NEW) -->
+        <section class="offers-section">
+            <div class="offers-header">
+                <span>Ofertas</span>
+                <i data-lucide="chevron-right" class="chevron-gray"></i>
+            </div>
+            <div class="offers-scroll">
+                <!-- Offer Card 1 -->
+                <div class="offer-card">
+                    <div class="offer-top">
+                        <span class="offer-name">Cupom de envio</span>
+                        <span class="offer-badge">x2</span>
+                    </div>
+                    <p class="offer-desc">Desconto de R$ 10 no frete em pedidos acima de R$ 9</p>
+                    <div class="offer-pill-btn"><i data-lucide="check" class="icon-tiny"></i> Em uso</div>
+                </div>
+                <!-- Offer Card 2 -->
+                <div class="offer-card">
+                    <div class="offer-top">
+                        <span class="offer-name">Desconto de R$ 5</span>
+                    </div>
+                    <p class="offer-desc">nos pedidos acima de R$ 50</p>
+                    <div class="offer-pill-btn"><i data-lucide="check" class="icon-tiny"></i> Em uso</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Info Card (Refined) -->
+        <section class="store-card-section">
+            <div class="store-card">
+                <div class="store-top">
+                    <img src="https://achadinhosdavitrine.com.br/assets/store-logo-new-C-xEh9OV.png" alt="Logo" class="store-logo">
+                    <div class="store-main">
+                        <div class="store-name">Achadinhos da Vitrine <i data-lucide="check-circle" class="verified-store"></i></div>
+                        <div class="store-badge">Loja Oficial</div>
+                    </div>
+                </div>
+                <div class="store-stats">
+                    <div class="stat-item">
+                        <span class="stat-val">98%</span>
+                        <span class="stat-label">Feedback Positivo</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">2.8k</span>
+                        <span class="stat-label">Avaliações</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">5.0k</span>
+                        <span class="stat-label">Vendidos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section (Vertical) -->
+        <section class="video-section">
+            <h2 class="section-title">🎬 Veja a Scooter TUI em ação</h2>
+            <div class="video-container" style="position: relative; border-radius: 16px; overflow: hidden; background: #000; aspect-ratio: 9 / 16; max-width: 420px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <video id="productVideo" width="100%" height="100%" controls preload="metadata" style="object-fit: cover; display: block;">
+                    <source src="https://achadinhosdavitrine.com.br/videos/scooter-unboxing.mp4#t=0.001" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Savings Comparison Block (NEW) -->
+        <section class="savings-section">
+            <div class="savings-header">
+                <h2>Veja a diferença na sua rotina</h2>
+                <p>Chega de gastar fortunas com combustível. Com a Scooter TUI, você economiza até <span class="green-bold">R$ 7.000 por ano</span> e se locomove com total praticidade.</p>
+            </div>
+
+            <!-- Card 1: Fuel -->
+            <div class="comparison-card">
+                <div class="comp-card-header">
+                    <span class="comp-icon">⛽</span>
+                    <span class="comp-title">GASTO MENSAL COM COMBUSTÍVEL</span>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-label-row">
+                        <span>→ Carro/Moto</span>
+                        <span class="bold">R$ 600</span>
+                    </div>
+                    <div class="comp-bar-full"></div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-label-row">
+                        <span>→ Scooter TUI</span>
+                        <span class="bold">R$ 15</span>
+                    </div>
+                    <div class="comp-dot-blue"></div>
+                </div>
+                <div class="economy-pill">💰 Economia de R$ 585/mês</div>
+            </div>
+
+            <!-- Card 2: Maintenance -->
+            <div class="comparison-card">
+                <div class="comp-card-header">
+                    <span class="comp-icon">🔧</span>
+                    <span class="comp-title">MANUTENÇÃO ANUAL</span>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-label-row">
+                        <span>→ Carro/Moto</span>
+                        <span class="bold">R$ 3.000</span>
+                    </div>
+                    <div class="comp-bar-full"></div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-label-row">
+                        <span>→ Scooter TUI</span>
+                        <span class="bold">R$ 200</span>
+                    </div>
+                    <div class="comp-dot-blue"></div>
+                </div>
+                <div class="economy-pill">💰 Economia de R$ 2.800/ano</div>
+            </div>
+        </section>
+
+        <!-- About Product -->
+        <section class="about-product-section">
+            <h2 class="section-title">Sobre o Produto</h2>
+            <p class="main-desc">A Scooter Elétrica TUI com motor de 1000W é ideal para quem busca mobilidade urbana com conforto e economia. Com autonomia de até 60km e velocidade máxima de 45km/h.</p>
+            
+            <div class="advantages-block">
+                <h3>✅ VANTAGENS:</h3>
+                <ul>
+                    <li>• Motor potente de 1000W – sobe ladeiras</li>
+                    <li>• 2 lugares – leve acompanhante com segurança</li>
+                    <li>• Sem necessidade de CNH – prática e acessível</li>
+                    <li>• Bateria removível – carregue em qualquer tomada</li>
+                    <li>• Freios a disco dianteiro e traseiro</li>
+                </ul>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-tile">
+                    <i data-lucide="battery"></i>
+                    <span class="spec-label">AUTONOMIA</span>
+                    <span class="spec-val">Até 60km</span>
+                </div>
+                <div class="spec-tile">
+                    <i data-lucide="zap"></i>
+                    <span class="spec-label">MOTOR</span>
+                    <span class="spec-val">1000W</span>
+                </div>
+                <div class="spec-tile">
+                    <i data-lucide="battery-charging"></i>
+                    <span class="spec-label">RECARGA</span>
+                    <span class="spec-val">6-8 Horas</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table Section -->
+        <section class="comparison-grid-section">
+            <span class="comp-tag">COMPARE E ECONOMIZE</span>
+            <h2>Onde custa menos?</h2>
+            <div class="comp-table-wrapper">
+                <table class="comp-table">
+                    <thead>
+                        <tr><th>ONDE</th><th>PREÇO</th><th>OBSERVAÇÃO</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Loja física</td><td class="strikethrough">R$ 4.999</td><td>Preço cheio</td></tr>
+                        <tr><td>Marketplace</td><td class="strikethrough">R$ 2.499</td><td>Com frete</td></tr>
+                        <tr class="highlight-here-row"><td class="bold">Aqui</td><td class="bold green">R$ 99,70</td><td class="bold green">Frete Grátis</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Preciso de CNH para dirigir esse modelo?</span>
+                    <i data-lucide="chevron-down" class="faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Não! De acordo com a Resolução 996/23 do CONTRAN, os veículos autopropelidos com motor de até 1000W e velocidade máxima limitada não exigem Carteira Nacional de Habilitação (CNH), emplacamento ou IPVA.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Qual é o tempo de carga e autonomia?</span>
+                    <i data-lucide="chevron-down" class="faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>O tempo de carga completa varia entre 6 a 8 horas. Uma carga completa oferece autonomia de até 60km, dependendo do trajeto e do peso sobre o veículo.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>A bateria é removível?</span>
+                    <i data-lucide="chevron-down" class="faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, a bateria de lítio é removível, permitindo que você a carregue em qualquer tomada 110v ou 220v (bivolt).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Detailed -->
+        <section class="reviews-detailed" id="reviews">
+            <div class="reviews-header">
+                <h2>Avaliações (3.247)</h2>
+                <span class="view-all">Ver todas</span>
+            </div>
+
+            <div class="review-summary-card">
+                <div class="summary-left">
+                    <span class="main-score">4.8</span>
+                    <div class="summary-stars">
+                        <i data-lucide="star" class="star-fill"></i>
+                        <i data-lucide="star" class="star-fill"></i>
+                        <i data-lucide="star" class="star-fill"></i>
+                        <i data-lucide="star" class="star-fill"></i>
+                        <i data-lucide="star" class="star-fill"></i>
+                    </div>
+                </div>
+                <div class="summary-middle">
+                    <div class="bar-row">
+                        <span class="bar-num">5</span>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+                <div class="summary-right">
+                    <span class="recommend-pct">98%</span>
+                    <span class="recommend-text">recomendam</span>
+                </div>
+            </div>
+
+            <div class="review-list">
+                <!-- 1. Fernanda C. -->
+                <div class="review-card">
+                    <div class="review-user-row">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100" class="r-avatar">
+                        <div class="r-user-info">
+                            <div class="r-name-row">
+                                <span class="r-name">Fernanda C.</span>
+                                <span class="verified-badge"><i data-lucide="check" style="width: 10px;"></i> Compra verificada</span>
+                            </div>
+                            <div class="r-date-row">
+                                <div class="r-stars">
+                                    <i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i>
+                                </div>
+                                <span class="r-date">• há 23 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-variation">Variação: Preta</div>
+                    <p class="r-comment">Melhor compra que fiz! Economizo muito com combustível e chego rápido no trabalho. Recomendo demais!</p>
+                    <div class="r-images"><img src="https://achadinhosdavitrine.com.br/assets/review-4-D203-0R6.jpg" alt="Review Photo"></div>
+                    <div class="r-footer">
+                        <div class="r-action"><i data-lucide="heart" class="icon-tiny"></i> 234</div>
+                        <div class="r-action"><i data-lucide="message-circle" class="icon-tiny"></i> Responder</div>
+                        <i data-lucide="share-2" class="icon-tiny r-share"></i>
+                    </div>
+                </div>
+
+                <!-- 2. Carlos M. -->
+                <div class="review-card">
+                    <div class="review-user-row">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=100" class="r-avatar">
+                        <div class="r-user-info">
+                            <div class="r-name-row">
+                                <span class="r-name">Carlos M.</span>
+                                <span class="verified-badge"><i data-lucide="check" style="width: 10px;"></i> Compra verificada</span>
+                            </div>
+                            <div class="r-date-row">
+                                <div class="r-stars">
+                                    <i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i>
+                                </div>
+                                <span class="r-date">• há 41 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-variation">Variação: Vermelha</div>
+                    <p class="r-comment">Scooter sensacional! Uso para ir ao trabalho e passeio. Motor potente e bateria dura o dia todo.</p>
+                    <div class="r-footer">
+                        <div class="r-action"><i data-lucide="heart" class="icon-tiny"></i> 189</div>
+                        <div class="r-action"><i data-lucide="message-circle" class="icon-tiny"></i> Responder</div>
+                        <i data-lucide="share-2" class="icon-tiny r-share"></i>
+                    </div>
+                </div>
+
+                <!-- 3. Rafael O. -->
+                <div class="review-card">
+                    <div class="review-user-row">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100" class="r-avatar">
+                        <div class="r-user-info">
+                            <div class="r-name-row">
+                                <span class="r-name">Rafael O.</span>
+                                <span class="verified-badge"><i data-lucide="check" style="width: 10px;"></i> Compra verificada</span>
+                            </div>
+                            <div class="r-date-row">
+                                <div class="r-stars">
+                                    <i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i><i data-lucide="star" class="star-fill"></i>
+                                </div>
+                                <span class="r-date">• há 1 hora</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-variation">Variação: Preta</div>
+                    <p class="r-comment">Não precisa de CNH e economizo uma fortuna! Motor de 1000W é muito potente, sobe ladeira tranquilo. Super silenciosa também.</p>
+                    <div class="r-images"><img src="https://achadinhosdavitrine.com.br/assets/review-3-iEG-N9S5.jpg" alt="Review Photo"></div>
+                    <div class="r-footer">
+                        <div class="r-action"><i data-lucide="heart" class="icon-tiny"></i> 198</div>
+                        <div class="r-action"><i data-lucide="message-circle" class="icon-tiny"></i> Responder</div>
+                        <i data-lucide="share-2" class="icon-tiny r-share"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refined Footer (Matching Screenshot) -->
+        <footer class="main-footer">
+            <div class="footer-logo-row">
+                <img src="https://achadinhosdavitrine.com.br/assets/store-logo-new-C-xEh9OV.png" alt="Logo" class="footer-logo">
+            </div>
+
+            <div class="trust-icons-row">
+                <div class="trust-item">
+                    <i data-lucide="shield-check"></i>
+                    <span>Compra Segura</span>
+                </div>
+                <div class="trust-item">
+                    <i data-lucide="lock"></i>
+                    <span>Site Protegido</span>
+                </div>
+                <div class="trust-item">
+                    <i data-lucide="award"></i>
+                    <span>Garantia</span>
+                </div>
+            </div>
+
+            <div class="footer-info-block">
+                <h3 class="footer-brand">Achadinhos da Vitrine</h3>
+                <p class="footer-cnpj">CNPJ: 63.805.779/0001-32</p>
+                <p class="footer-address">Rua das Palmeiras, 482 - São Paulo/SP</p>
+                
+                <div class="contact-links">
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <span>contato@achadinhosdavitrine.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <span>(11) 94837-2156</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="clock"></i>
+                        <span>Segunda a Sexta, das 9h às 18h</span>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <span class="payment-title">Formas de Pagamento</span>
+                    <div class="payment-methods">
+                        <div class="pay-method">PIX</div>
+                        <div class="pay-method"><span class="card-icon">💳</span> Cartão</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legal-links-footer">
+                <a href="termos.html">Termos de Uso</a>
+                <a href="privacidade.html">Privacidade</a>
+                <a href="trocas.html">Trocas e Devoluções</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </footer>
+    </div> <!-- End Container -->
+
+    <!-- Sticky Bottom (Outside Container) -->
+    <div class="sticky-bottom-refined">
+        <div class="sticky-icon-col">
+            <i data-lucide="store"></i>
+            <span>Loja</span>
+        </div>
+        <div class="sticky-icon-col">
+            <i data-lucide="message-square"></i>
+            <span>Chat</span>
+        </div>
+        <button class="buy-btn-gradient" id="buyBtn">
+            <span class="buy-price">R$ 99,70</span>
+            <span class="buy-subtitle">Comprar agora | Frete grátis</span>
+        </button>
+    </div>
+
+    <script src="script.js?v=1.2"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
