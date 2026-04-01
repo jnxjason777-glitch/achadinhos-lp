@@ -79,11 +79,23 @@ function initCTA() {
     const buyBtn = document.querySelector('#buyBtn');
     if (buyBtn) {
         buyBtn.addEventListener('click', () => {
-            // Persist UTMs and other search params
-            const currentParams = new URLSearchParams(window.location.search);
-            const checkoutUrlObj = new URL(CHECKOUT_URL);
+            // 1. Identify selected variant
+            const activeVar = document.querySelector('.variation-item.active');
+            const variantId = activeVar ? activeVar.getAttribute('data-variant-id') : '';
+
+            // 2. Build Base URL
+            let finalUrl = CHECKOUT_URL;
             
-            // Append each param from current page to checkout URL
+            // 3. Append variant if present
+            if (variantId && variantId.trim() !== '') {
+                const separator = finalUrl.includes('?') ? '&' : '?';
+                finalUrl += `${separator}variant=${variantId}`;
+            }
+
+            // 4. Persist trailing UTMs and other search params
+            const currentParams = new URLSearchParams(window.location.search);
+            const checkoutUrlObj = new URL(finalUrl);
+            
             currentParams.forEach((value, key) => {
                 checkoutUrlObj.searchParams.set(key, value);
             });
