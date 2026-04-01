@@ -61,30 +61,28 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
+    padding: 8px 16px;
+    min-height: 60px;
+    gap: 10px;
 }
 
-.discount-box {
-    background: #fff;
-    color: #2e7d32;
-    font-weight: 800;
-    font-size: 13px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    margin-right: 12px;
+.flash-left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-.flash-left .current-price {
-    font-size: 24px;
-    font-weight: 800;
-}
-
-.old-price-banner {
+.offer-banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
     display: block;
-    font-size: 13px;
-    text-decoration: line-through;
-    opacity: 0.8;
+    object-fit: contain;
+    object-position: left;
 }
+
+
 
 .flash-right {
     text-align: right;
