@@ -232,12 +232,12 @@ body {
 
 /* Variations Section */
 .variations-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 16px;
-    gap: 12px;
-    overflow-x: auto;
-    scrollbar-width: none;
+    gap: 8px;
     background: #fff;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .variations-section::-webkit-scrollbar { display: none; }
