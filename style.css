@@ -176,26 +176,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* Price Display - Clean Version (Top) */
-.price-main-clean {
-    margin: 10px 0 15px;
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-}
-
-.current-price-hero {
-    font-size: 28px;
-    font-weight: 800;
-    color: #222;
-}
-
-.unit-text {
-    font-size: 14px;
-    color: #666;
-    font-weight: 500;
-}
-
 .stats-row {
     display: flex;
     align-items: center;
