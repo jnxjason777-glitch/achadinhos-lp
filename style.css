@@ -256,7 +256,8 @@ body {
 
 .strikethrough { text-decoration: line-through; }
 
-/* Variations Section */
+/* Variations Section Removed for Single Product Strategy */
+/*
 .variations-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -339,6 +340,7 @@ body {
 
 .best-seller-tag { background: #FF2E5B; }
 .popular-tag { background: #999; }
+*/
 
 /* Store Card Section */
 .store-card-section {

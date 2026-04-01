@@ -1,45 +1,4 @@
-// 1. Carousel & Variations Sync
-function initCarouselSync() {
-    const carousel = document.querySelector('#mainCarousel');
-    const pills = document.querySelectorAll('.pill');
-    const varItems = document.querySelectorAll('.variation-item');
-    let isMoving = false;
-
-    const updatePills = (index) => {
-        pills.forEach((p, i) => p.classList.toggle('active', i === index));
-    };
-
-    const scrollToImage = (index) => {
-        if (isMoving) return;
-        isMoving = true;
-        const imgWidth = carousel.querySelector('img').offsetWidth;
-        carousel.scrollTo({
-            left: index * imgWidth,
-            behavior: 'smooth'
-        });
-        updatePills(index);
-        setTimeout(() => isMoving = false, 500);
-    };
-
-    // Variation click
-    varItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-            varItems.forEach(v => v.classList.remove('active'));
-            item.classList.add('active');
-            scrollToImage(index);
-        });
-    });
-
-    // Carousel scroll listener to update pills
-    carousel.addEventListener('scroll', () => {
-        const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
-        updatePills(index);
-        // Highlight corresponding variation
-        varItems.forEach((v, i) => v.classList.toggle('active', i === index));
-    });
-}
-
-// 2. FAQ Accordion
+// 1. FAQ Accordion
 function initFAQ() {
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
@@ -52,7 +11,7 @@ function initFAQ() {
     });
 }
 
-// 3. Countdown Timer (Rolling 5 hours)
+// 2. Countdown Timer (Rolling 5 hours)
 function startCountdown(duration) {
     let timer = duration;
     const display = document.querySelector('#timer');
@@ -72,24 +31,17 @@ function startCountdown(duration) {
     }, 1000);
 }
 
-// 4. CTA Redirection (with UTM & Parameter Persistence)
-const CHECKOUT_URL = '[SUA_URL_DE_CHECKOUT]'; // Substitua pelo seu link atualizado
+// 3. CTA Redirection (Fixed Black Variation URL)
+const CHECKOUT_URL = 'https://pagamento.cleostore-paymants.space/pay/97fa24d0-2da0-46f7-9121-e0f9c63ba95d';
 
 function initCTA() {
     const buyBtn = document.querySelector('#buyBtn');
     if (buyBtn) {
         buyBtn.addEventListener('click', () => {
-            // 1. Identify selected variant and its specific checkout URL
-            const activeVar = document.querySelector('.variation-item.active');
-            const variationUrl = activeVar ? activeVar.getAttribute('data-checkout-url') : '';
-
-            // 2. Fallback to global URL if specific one is missing
-            let finalUrl = variationUrl || CHECKOUT_URL;
-            
-            // 3. Persist UTMs and other search params from current page
+            // Persist UTMs and other search params from current page
             try {
                 const currentParams = new URLSearchParams(window.location.search);
-                const checkoutUrlObj = new URL(finalUrl);
+                const checkoutUrlObj = new URL(CHECKOUT_URL);
                 
                 currentParams.forEach((value, key) => {
                     checkoutUrlObj.searchParams.set(key, value);
@@ -97,8 +49,8 @@ function initCTA() {
 
                 window.location.href = checkoutUrlObj.toString();
             } catch (e) {
-                // Fail-safe redirect if URL parsing fails
-                window.location.href = finalUrl;
+                // Fail-safe redirect
+                window.location.href = CHECKOUT_URL;
             }
         });
     }
@@ -106,8 +58,7 @@ function initCTA() {
 
 // Initialization
 document.addEventListener('DOMContentLoaded', () => {
-    initCarouselSync();
     initFAQ();
     initCTA();
-    startCountdown(5400 + 4813); // Fixed for demo, usually dynamic
+    startCountdown(5400 + 4813); 
 });
